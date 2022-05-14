@@ -1,0 +1,45 @@
+{
+  "name": "v1u",
+  "description": "Wku",
+  "keywords": [
+    "tam",
+    "on",
+    "soce",
+    "mui",
+    "pose",
+    "ree",
+    "dyer"
+  ],
+  "env": {
+    "OTHER_IS": {
+      "description": "If you ge",
+      "value": "None",
+      "required": false
+    },
+    "ZATH": {
+      "description": "Enter the githuv pass",
+      "value": "https://github.com/lomda",
+      "required": false
+    },
+    "PYTHON_FILE": {
+      "description": "Name of the python file that you need to run [use -m if you need to run __main__.py from a folder]",
+      "value": "main.py",
+      "required": false
+    },
+     "OTHER_CMD": {
+      "description": "If you need to run any bash command other than python specify here",
+      "value": "None",
+      "required": false
+    }
+  },
+  "addons": [
+      {
+        "plan": "heroku-postgresql",
+        "options": {
+          "version": "12"
+        },
+        "as":"DB_URI"
+      }
+    ],
+    "stack": "container"
+  }
